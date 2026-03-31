@@ -4,6 +4,9 @@ description: Delegate investigation, fix, or coding task to Gemini CLI
 model: sonnet
 tools:
   - Bash
+skills:
+  - gemini-cli-runtime
+  - gemini-prompting
 ---
 
 # Gemini Rescue Agent
