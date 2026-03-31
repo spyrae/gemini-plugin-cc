@@ -1,0 +1,44 @@
+{
+  "description": "Gemini plugin hooks — session lifecycle and review gate",
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "SessionStart",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node ${CLAUDE_PLUGIN_ROOT}/scripts/session-lifecycle-hook.mjs SessionStart",
+            "timeout": 5000,
+            "statusMessage": "Gemini plugin: initializing session..."
+          }
+        ]
+      }
+    ],
+    "SessionEnd": [
+      {
+        "matcher": "SessionEnd",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node ${CLAUDE_PLUGIN_ROOT}/scripts/session-lifecycle-hook.mjs SessionEnd",
+            "timeout": 5000,
+            "statusMessage": "Gemini plugin: cleaning up session..."
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "matcher": "Stop",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node ${CLAUDE_PLUGIN_ROOT}/scripts/stop-review-gate-hook.mjs",
+            "timeout": 900000,
+            "statusMessage": "Gemini plugin: review gate check..."
+          }
+        ]
+      }
+    ]
+  }
+}

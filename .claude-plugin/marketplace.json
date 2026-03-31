@@ -1,0 +1,14 @@
+{
+  "name": "gemini-plugin-cc",
+  "owner": {
+    "name": "Roman Belov",
+    "email": "roman@spyrae.dev"
+  },
+  "plugins": [
+    {
+      "name": "gemini",
+      "source": "./plugins/gemini",
+      "description": "Use Gemini CLI from Claude Code to review code or delegate tasks. No API keys — works via Gemini CLI subscription."
+    }
+  ]
+}
