@@ -6,7 +6,7 @@
   },
   "plugins": [
     {
-      "name": "gemini",
+      "name": "g-cc",
       "source": "./plugins/gemini",
       "description": "Use Gemini CLI from Claude Code to review code or delegate tasks. No API keys — works via Gemini CLI subscription."
     }
