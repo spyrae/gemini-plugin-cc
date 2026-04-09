@@ -1,20 +1,33 @@
+<div align="center">
+
 # gemini-plugin-cc
 
-**Use Gemini CLI from Claude Code** to review code or delegate tasks.
+### Official Claude Code Plugin
+
+**Use Gemini CLI from Claude Code** to review code and delegate tasks.
 
 Works via Gemini CLI subscription — **no API keys needed**.
+
+[![Claude Code Plugin](https://img.shields.io/badge/Claude_Code-Official_Plugin-d97706?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+PHBhdGggZD0iTTEyIDJMMyA3djEwbDkgNSA5LTVWN2wtOS01eiIvPjwvc3ZnPg==)](https://github.com/spyrae/gemini-plugin-cc)
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue?style=for-the-badge)](LICENSE)
+[![Node](https://img.shields.io/badge/Node.js-18+-339933?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org)
+
+Published in the [Claude Code Plugin Marketplace](https://claude.ai/settings) — install directly from Claude Code.
+
+</div>
+
+---
 
 ## Install
 
 ```bash
-# From GitHub (once published)
+# From Claude Code Plugin Marketplace (recommended)
+/install spyrae/gemini-plugin-cc
+
+# Or via CLI
 /plugin marketplace add spyrae/gemini-plugin-cc
 /plugin install gemini@spyrae-gemini
 /reload-plugins
-
-# For development
-cd ~/.claude/plugins/
-git clone https://github.com/spyrae/gemini-plugin-cc.git
 ```
 
 ### Prerequisites
@@ -119,4 +132,4 @@ Apache-2.0
 
 ## Author
 
-**Roman Belov** — [GitHub](https://github.com/spyrae)
+**Roman Belov** — [GitHub](https://github.com/spyrae) · [Blog](https://futurecraft.pro) · [LinkedIn](https://linkedin.com/in/romanblanc)
